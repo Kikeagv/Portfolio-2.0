@@ -123,3 +123,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Performance optimizations */
+.perspective-distant {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.transform-3d {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Smooth scrolling performance */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for performance */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
