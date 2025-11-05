@@ -64,18 +64,7 @@ export default function Hero({ className = "" }: HeroProps) {
         mouseStrength={0.5}
         brightness={1.0}
         className="w-full h-full"
-      >
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 drop-shadow-lg tracking-wider">
-              Hello
-            </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 drop-shadow-md max-w-2xl mx-auto px-4">
-              Welcome to my portfolio
-            </p>
-          </div>
-        </div>
-      </FaultyTerminal>
+      />
     </div>
   );
 }
